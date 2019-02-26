@@ -30,6 +30,8 @@ public class Main {
                 case 3:
                     inferenceEngine.infer(facts_base, fileManagement.extract_knowledge());
                     break;
+                    default:
+                        break;
             }
         }while(n != 4);
     }

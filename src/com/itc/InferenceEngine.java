@@ -16,6 +16,8 @@ public class InferenceEngine {
 
     public void forward_chaining(List<String> facts_base, List<Record> knowledge_base) {
         boolean found_rule = false;
+        Scanner in = new Scanner(System.in);
+        int decisition;
 
         do {
             List<Integer> indexes = new ArrayList<>();
@@ -48,14 +50,18 @@ public class InferenceEngine {
                     justificationModule.showRule(rule);
 
                     facts_base.add(rule.getC());
-                    found_rule = true;
+                    System.out.println("Nuevos hechos");
+                    justificationModule.showFacts(facts_base);
+
+                    System.out.println("¿La conclusión alcanzada es final?\n Sí - 1\nNo - 2");
+                    decisition = in.nextInt();
+                    found_rule = (decisition == 1 ? true : false);
                     break;
                 }
             }
             if (!found_rule) {
-                Scanner in = new Scanner(System.in);
-                System.out.println("No se encontró ninguna regla aplicable con el contenido de la base de hechos\n¿Desea agregar más hechos?\n1- si\n2- no");
-                int decisition = in.nextInt();
+                System.out.println("No se llegó a una conclusión final con el contenido de la base de hechos\n¿Desea agregar más hechos?\n1- si\n2- no");
+                decisition = in.nextInt();
                 if (decisition == 1) {
                     addFact(facts_base);
                 }

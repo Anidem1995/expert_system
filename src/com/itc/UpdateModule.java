@@ -12,6 +12,7 @@ public class UpdateModule {
     List<Record> knowledge_base;
 
     public void addRule() {
+        fileManagement = new FileManagement();
         Record record = setRule();
         fileManagement.write(record);
     }

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0570a53c-2b50-4717-8ced-b19c19b50576" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/UpdateModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/UpdateModule.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/itc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="19" column="126" selection-start-line="19" selection-start-column="126" selection-end-line="19" selection-end-column="126" />
+            <state relative-caret-position="444">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,12 +218,12 @@
       <workItem from="1551054561933" duration="7770000" />
       <workItem from="1551107681734" duration="264000" />
       <workItem from="1551124963042" duration="1147000" />
-      <workItem from="1551149272281" duration="8603000" />
+      <workItem from="1551149272281" duration="8692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39561000" />
+    <option name="totallyTimeSpent" value="39650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,8 +337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itc/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="19" column="126" selection-start-line="19" selection-start-column="126" selection-end-line="19" selection-end-column="126" />
+        <state relative-caret-position="444">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

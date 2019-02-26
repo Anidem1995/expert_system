@@ -25,9 +25,10 @@ public class Main {
                     updateModule.updateRule();
                     break;
                 case 2:
-                    inferenceEngine.infer(facts_base, fileManagement.extract_knowledge());
+                    updateModule.addRule();
                     break;
                 case 3:
+                    inferenceEngine.infer(facts_base, fileManagement.extract_knowledge());
                     break;
             }
         }while(n != 4);

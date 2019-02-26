@@ -11,6 +11,9 @@ public class Record {
     private String a5;
     private String a6;
     private String a7;
+    private String a8;
+    private String a9;
+    private String a10;
 
     private String c;
 
@@ -22,12 +25,14 @@ public class Record {
         this.a5 = "";
         this.a6 = "";
         this.a7 = "";
-
+        this.a8 = "";
+        this.a9 = "";
+        this.a10 = "";
 
         this.c = "";
     }
 
-    public Record(String a1, String a2, String a3, String a4, String a5, String a6, String a7, String c) {
+    public Record(String a1, String a2, String a3, String a4, String a5, String a6, String a7, String a8, String a9, String a10, String c) {
         this.a1 = a1;
         this.a2 = a2;
         this.a3 = a3;
@@ -35,6 +40,9 @@ public class Record {
         this.a5 = a5;
         this.a6 = a6;
         this.a7 = a7;
+        this.a8 = a8;
+        this.a9 = a9;
+        this.a10 = a10;
 
         this.c = c;
     }
@@ -95,7 +103,29 @@ public class Record {
         this.a7 = a7;
     }
 
+    public String getA8() {
+        return a8;
+    }
 
+    public void setA8(String a8) {
+        this.a8 = a8;
+    }
+
+    public String getA9() {
+        return a9;
+    }
+
+    public void setA9(String a9) {
+        this.a9 = a9;
+    }
+
+    public String getA10() {
+        return a10;
+    }
+
+    public void setA10(String a10) {
+        this.a10 = a10;
+    }
 
     public String getC() {
         return c;
@@ -108,13 +138,16 @@ public class Record {
     private int getBackgroundSize()
     {
         int n = 0;
-        n += (this.a1.equals("") ? 1 : 0);
-        n += (this.a2.equals("") ? 1 : 0);
-        n += (this.a3.equals("") ? 1 : 0);
-        n += (this.a4.equals("") ? 1 : 0);
-        n += (this.a5.equals("") ? 1 : 0);
-        n += (this.a6.equals("") ? 1 : 0);
-        n += (this.a7.equals("") ? 1 : 0);
+        n += (this.a1.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a2.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a3.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a4.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a5.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a6.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a7.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a8.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a9.replace("\u0000", "").equals("") ? 0 : 1);
+        n += (this.a10.replace("\u0000", "").equals("") ? 0 : 1);
 
         return n;
     }
@@ -122,7 +155,7 @@ public class Record {
     public List<String> getBackground() {
         List<String> background = new ArrayList<>();
 
-        int backgruonds = getBackgroundSize();
+        int backgruonds = this.getBackgroundSize();
         switch (backgruonds) {
             case 1:
                 background.add(this.a1);
@@ -165,6 +198,39 @@ public class Record {
                 background.add(this.a5);
                 background.add(this.a6);
                 background.add(this.a7);
+                break;
+            case 8:
+                background.add(this.a1);
+                background.add(this.a2);
+                background.add(this.a3);
+                background.add(this.a4);
+                background.add(this.a5);
+                background.add(this.a6);
+                background.add(this.a7);
+                background.add(this.a8);
+                break;
+            case 9:
+                background.add(this.a1);
+                background.add(this.a2);
+                background.add(this.a3);
+                background.add(this.a4);
+                background.add(this.a5);
+                background.add(this.a6);
+                background.add(this.a7);
+                background.add(this.a8);
+                background.add(this.a9);
+                break;
+            case 10:
+                background.add(this.a1);
+                background.add(this.a2);
+                background.add(this.a3);
+                background.add(this.a4);
+                background.add(this.a5);
+                background.add(this.a6);
+                background.add(this.a7);
+                background.add(this.a8);
+                background.add(this.a9);
+                background.add(this.a10);
                 break;
         }
         return background;

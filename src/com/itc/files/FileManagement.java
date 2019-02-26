@@ -53,13 +53,137 @@ public class FileManagement {
             sb.setLength(3);
             master.writeChars(sb.toString());
 
+            sb = new StringBuffer(record.getA8());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(record.getA9());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(record.getA10());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
             sb = new StringBuffer(record.getC());
             sb.setLength(3);
             master.writeChars(sb.toString());
 
             index.seek(index.length());
-            index.writeInt(position + 48);
-            index.seek(index.length() - 4);
+            index.writeInt(position + 66);
+
+            master.close();
+            index.close();
+        }catch(Exception e) {e.printStackTrace();}
+    }
+
+    public void clear(int rule_index) {
+        try {
+            index = new RandomAccessFile("index", "rw");
+            master = new RandomAccessFile("master", "rw");
+
+            index.seek(rule_index * 4);
+            int rule_position = index.readInt();
+            master.seek(rule_position);
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer("");
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+        }catch (Exception e) {e.printStackTrace();}
+    }
+
+    public void overWrite(int rule_index, Record rule) {
+        try {
+            index = new RandomAccessFile("index", "rw");
+            master = new RandomAccessFile("master", "rw");
+
+            index.seek((rule_index * 4) - 4);
+            int rule_position = index.readInt();
+            master.seek(rule_position);
+
+            sb = new StringBuffer(rule.getA1());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA2());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA3());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA4());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA5());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA6());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA7());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA8());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA9());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getA10());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
+
+            sb = new StringBuffer(rule.getC());
+            sb.setLength(3);
+            master.writeChars(sb.toString());
 
             master.close();
             index.close();
@@ -77,16 +201,19 @@ public class FileManagement {
             do {
                 master.seek(n);
                 record = new Record(
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()),
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()),
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()),
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()),
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()),
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()),
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()),
-                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()) + String.valueOf(master.readChar()));
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""));
                 knowledge_base.add(record);
-                n += 48;
+                n += 66;
             }while(master.getFilePointer() < master.length());
         } catch (Exception e) {
             e.printStackTrace();

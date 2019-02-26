@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class InferenceEngine {
+    private JustificationModule justificationModule = new JustificationModule();
     private List<Record> conflict_set;
 
     public void infer(List<String> facts_base, List<Record> knowledge_base) {//la base de hechos y de conocimientos
@@ -15,19 +16,40 @@ public class InferenceEngine {
 
     public void forward_chaining(List<String> facts_base, List<Record> knowledge_base) {
         boolean found_rule = false;
-        conflict_set = new ArrayList<>();
 
         do {
+            List<Integer> indexes = new ArrayList<>();
+            conflict_set = new ArrayList<>();
+
+            if(!facts_base.isEmpty()) {
+                System.out.println("Hechos presentes");
+                justificationModule.showFacts(facts_base);
+            }
+
             for(String fact : facts_base) {
                 for(Record rule : knowledge_base) {
-                    if(check_background(rule, fact))
+                    if(check_background(rule, fact) && !conflict_set.contains(rule)) {
                         conflict_set.add(rule);
+                        indexes.add(knowledge_base.indexOf(rule) + 1);
+                    }
                 }
             }
+            if(!conflict_set.isEmpty()) {
+                System.out.println("Conjunto conflicto");
+                justificationModule.showConflictSet(indexes);
+            }
+
             for(Record rule : conflict_set) {
+                System.out.println("Validando con la regla");
+                justificationModule.showRule(rule);
+
                 if(validate_rule(facts_base, rule)) {
+                    System.out.println("Coincidencia encontrada con");
+                    justificationModule.showRule(rule);
+
                     facts_base.add(rule.getC());
                     found_rule = true;
+                    break;
                 }
             }
             if (!found_rule) {
@@ -40,9 +62,6 @@ public class InferenceEngine {
 
             }
         }while(!found_rule);
-        System.out.println("Conclusión");
-        for(String fact : facts_base)
-            System.out.println(fact);
     }
 
 
@@ -50,7 +69,8 @@ public class InferenceEngine {
         return (fact.equals(record.getA1()) || fact.equals(record.getA2()) ||
                 fact.equals(record.getA3()) || fact.equals(record.getA4()) ||
                 fact.equals(record.getA5()) || fact.equals(record.getA6()) ||
-                fact.equals(record.getA7()) ? true : false);
+                fact.equals(record.getA7()) || fact.equals(record.getA8()) ||
+                fact.equals(record.getA9()) || fact.equals(record.getA10()) ? true : false);
     }
 
     public boolean validate_rule(List<String> facts_base, Record rule) {

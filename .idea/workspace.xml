@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0570a53c-2b50-4717-8ced-b19c19b50576" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index" beforeDir="false" afterPath="$PROJECT_DIR$/index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/master" beforeDir="false" afterPath="$PROJECT_DIR$/master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expert_system/META-INF/expert_system.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/InferenceEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/InferenceEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/JustificationModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/JustificationModule.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/UpdateModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/UpdateModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/FileManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/FileManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/master" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itc/InferenceEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/InferenceEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/UpdateModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/UpdateModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itc/JustificationModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/JustificationModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itc/files/FileManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/files/FileManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itc/files/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itc/files/master" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +27,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/itc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="238">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/itc/files/FileManagement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+            <state relative-caret-position="17">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,10 +57,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/itc/InferenceEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="374">
+              <caret line="22" column="156" selection-start-line="22" selection-start-column="156" selection-end-line="22" selection-end-column="156" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/itc/JustificationModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="680">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/itc/knowledge_base/Record.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="149" column="45" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
+            <state relative-caret-position="1853">
+              <caret line="154" column="41" selection-start-line="154" selection-start-column="41" selection-end-line="154" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,14 +97,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/itc/UpdateModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="255">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#setRule#0;class#UpdateModule#0" />
               </folding>
             </state>
           </provider>
@@ -106,7 +123,16 @@
       <find>ba</find>
       <find>getbackground</find>
       <find>getbackgroundsi</find>
+      <find>break</find>
+      <find>forward</find>
+      <find>check</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Users\Jose\Documents\expert_system\src\com\itc\ui</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,16 +143,20 @@
         <option value="$PROJECT_DIR$/src/com/itc/FileManagement.java" />
         <option value="$PROJECT_DIR$/src/com/itc/inference_engine.java" />
         <option value="$PROJECT_DIR$/src/com/itc/knowledge_base/Record.java" />
-        <option value="$PROJECT_DIR$/src/com/itc/JustificationModule.java" />
+        <option value="$PROJECT_DIR$/src/com/itc/UpdateModule.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/itc/ui/MainWindow.form" />
+        <option value="$PROJECT_DIR$/src/com/itc/ui/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/com/itc/files/FileManagement.java" />
         <option value="$PROJECT_DIR$/src/com/itc/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/itc/JustificationModule.java" />
         <option value="$PROJECT_DIR$/src/com/itc/InferenceEngine.java" />
-        <option value="$PROJECT_DIR$/src/com/itc/UpdateModule.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
+    <option name="y" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
@@ -136,7 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,15 +192,27 @@
               <item name="itc" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="expert_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expert_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="itc" type="462c0819:PsiDirectoryNode" />
+              <item name="knowledge_base" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -191,20 +233,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.itc.Main" />
       <module name="expert_system" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="MainWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itc.ui.MainWindow" />
+      <module name="expert_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itc.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,6 +260,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -233,11 +282,33 @@
       <workItem from="1551189354645" duration="1383000" />
       <workItem from="1551200020398" duration="1224000" />
       <workItem from="1551203887768" duration="22000" />
+      <workItem from="1551209277499" duration="1648000" />
+      <workItem from="1551302238431" duration="22000" />
+      <workItem from="1554683234662" duration="756000" />
+      <workItem from="1554825487257" duration="3299000" />
+      <workItem from="1554839981944" duration="638000" />
+      <workItem from="1554899222826" duration="2112000" />
+      <workItem from="1554960447094" duration="134000" />
+      <workItem from="1558917590175" duration="332000" />
+      <workItem from="1558920149596" duration="34000" />
+      <workItem from="1558920245187" duration="35000" />
+      <workItem from="1561746317122" duration="295000" />
+      <workItem from="1561746634469" duration="18000" />
+      <workItem from="1561746678723" duration="347000" />
+      <workItem from="1561747296734" duration="78000" />
+      <workItem from="1563543903313" duration="3999000" />
+      <workItem from="1563785009623" duration="1974000" />
+      <workItem from="1563804020385" duration="852000" />
+      <workItem from="1564528297521" duration="76000" />
+      <workItem from="1564528396282" duration="103000" />
+      <workItem from="1571965640186" duration="1658000" />
+      <workItem from="1571977090070" duration="12000" />
+      <workItem from="1573850189523" duration="3312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43809000" />
+    <option name="totallyTimeSpent" value="65543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,17 +320,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22416107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26675978" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5991501" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -269,7 +340,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32960895" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -279,56 +350,29 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/itc/UpdateModule.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/itc/files/master">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/itc/ui/MainWindow.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/itc/ui/MainWindow.form" />
     <entry file="file://$PROJECT_DIR$/src/com/itc/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="238">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/itc/files/FileManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/itc/InferenceEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itc/JustificationModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="680">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -337,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itc/knowledge_base/Record.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="149" column="45" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
+        <state relative-caret-position="1853">
+          <caret line="154" column="41" selection-start-line="154" selection-start-column="41" selection-end-line="154" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -347,11 +391,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itc/UpdateModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="255">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#setRule#0;class#UpdateModule#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/itc/files/FileManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/itc/InferenceEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="156" selection-start-line="22" selection-start-column="156" selection-end-line="22" selection-end-column="156" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

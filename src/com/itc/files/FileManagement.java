@@ -2,9 +2,9 @@ package com.itc.files;
 
 import com.itc.knowledge_base.Record;
 
-import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
 
 public class FileManagement {
@@ -12,12 +12,16 @@ public class FileManagement {
     private RandomAccessFile master;
     StringBuffer sb;
 
+    /* Método que escribe un registro en el archivo maestro y el archivo índice
+     * @param record la regla a escribir en el archivo maestro
+     */
     public void write(Record record) {
         try {
             int position = 0;
             index = new RandomAccessFile("index", "rw");
             master = new RandomAccessFile("master", "rw");
 
+            /*Posiciona el cursor al final del archivo para evitar sobreescritura*/
             index.seek(index.length());
             if(index.length() != 0) {
                 index.seek(index.length() - 4);
@@ -77,6 +81,9 @@ public class FileManagement {
         }catch(Exception e) {e.printStackTrace();}
     }
 
+    /* Método que elimina una regla del archivo maestro*
+     * @param rule_index el índice de la regla a eliminar
+     */
     public void clear(int rule_index) {
         try {
             index = new RandomAccessFile("index", "rw");
@@ -132,6 +139,10 @@ public class FileManagement {
         }catch (Exception e) {e.printStackTrace();}
     }
 
+    /* Método que sobreescribe una regla
+     * @param rule_index índice de la regla a sobreescribir
+     * @param rule nueva regla a guardar
+     */
     public void overWrite(int rule_index, Record rule) {
         try {
             index = new RandomAccessFile("index", "rw");
@@ -190,6 +201,43 @@ public class FileManagement {
         }catch(Exception e) {e.printStackTrace();}
     }
 
+    public List<String> extract_facts() {
+        int n = 0;
+        int counter = 0;
+        Record record;
+        List<String> facts = new ArrayList<>();
+        ArrayList<String> factsWithoutDuplicates = null;
+        try {
+            index = new RandomAccessFile("index", "rw");
+            master = new RandomAccessFile("master", "rw");
+
+            do {
+                master.seek(n);
+                record = new Record(
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""),
+                        String.valueOf(master.readChar()) + String.valueOf(master.readChar()).replace("\u0000", "") + String.valueOf(master.readChar()).replace("\u0000", ""));
+                facts.addAll(record.getBackground());
+                n += 66;
+            }while(master.getFilePointer() < master.length());
+            LinkedHashSet<String> hashSet = new LinkedHashSet<>(facts);
+            factsWithoutDuplicates = new ArrayList<>(hashSet);
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return factsWithoutDuplicates;
+    }
+
+    /*Método que extrae la el contenido de la base de conocimiento y lo guarda en una lista de reglas*/
     public List<Record> extract_knowledge() {
         int n = 0;
         int counter = 0;
@@ -221,6 +269,7 @@ public class FileManagement {
         return knowledge_base;
     }
 
+    /*Método que lee el contenido del archivo maestro*/
     public void readFile() {
         int s = 0;
         int n = 0;

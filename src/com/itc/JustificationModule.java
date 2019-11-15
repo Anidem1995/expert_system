@@ -6,6 +6,9 @@ import java.util.List;
 
 public class JustificationModule {
 
+    /* Método que muestra el conjunto conflicto
+     * @param indexes los índices de las reglas contenidas en el conjunto conflicto
+     */
     public void showConflictSet(List<Integer> indexes) {
         String output = "{";
         for(int i = 0; i < indexes.size(); i++) {
@@ -18,6 +21,9 @@ public class JustificationModule {
         System.out.println(output + "\n");
     }
 
+    /* Método que muestra la base de hechos
+     * @param facts_base base de hechos
+     */
     public void showFacts(List<String> facts_base) {
         String output = "[";
         for(int i = 0; i < facts_base.size(); i++) {
@@ -30,6 +36,9 @@ public class JustificationModule {
         System.out.println(output + "\n");
     }
 
+    /* Método que muestra una regla con la forma a ^ b ^ c -> d
+     * @param record la regla a mostrar
+     */
     public void showRule(Record record) {
         String output = "";
         output += (!record.getA1().replace("\u0000", "").equals("") ? record.getA1() : "");

@@ -1,8 +1,6 @@
 package com.itc;
 
 import com.itc.files.FileManagement;
-import com.itc.knowledge_base.Record;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -14,6 +12,7 @@ public class Main {
         UpdateModule updateModule = new UpdateModule();
         InferenceEngine inferenceEngine = new InferenceEngine();
         List<String> facts_base = new ArrayList<>();
+
         int n = 0;
 
         do {

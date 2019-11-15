@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0570a53c-2b50-4717-8ced-b19c19b50576" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index" beforeDir="false" afterPath="$PROJECT_DIR$/index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/master" beforeDir="false" afterPath="$PROJECT_DIR$/master" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/META-INF/expert_system.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/InferenceEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/InferenceEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/JustificationModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/JustificationModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/FileManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/FileManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/expert_system/com/itc/files/master" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/InferenceEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/InferenceEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/JustificationModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/JustificationModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/files/FileManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itc/files/FileManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/files/index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itc/files/master" beforeDir="false" />
-    </list>
+    <list default="true" id="0570a53c-2b50-4717-8ced-b19c19b50576" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/itc/InferenceEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="156" selection-start-line="22" selection-start-column="156" selection-end-line="22" selection-end-column="156" />
+            <state relative-caret-position="247">
+              <caret line="79" column="51" lean-forward="true" selection-end-line="220" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -303,12 +285,12 @@
       <workItem from="1564528396282" duration="103000" />
       <workItem from="1571965640186" duration="1658000" />
       <workItem from="1571977090070" duration="12000" />
-      <workItem from="1573850189523" duration="3312000" />
+      <workItem from="1573850189523" duration="3529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65543000" />
+    <option name="totallyTimeSpent" value="65760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,7 +319,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
@@ -411,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itc/InferenceEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="156" selection-start-line="22" selection-start-column="156" selection-end-line="22" selection-end-column="156" />
+        <state relative-caret-position="247">
+          <caret line="79" column="51" lean-forward="true" selection-end-line="220" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
